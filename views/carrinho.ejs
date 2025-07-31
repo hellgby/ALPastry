@@ -1,0 +1,48 @@
+<%- include('partials/head') %>
+  <%- include('partials/header') %>
+
+    <div id="page-transition" class="fade-in">
+      <section class="carrinho">
+        <h2>PRODUTOS NO CARRINHO</h2>
+        <form action="/">
+          <button class="StyleButton" type="submit">
+            <i class="fa-solid fa-reply" style="margin-right: 15px;"></i>Voltar para compras
+          </button>
+        </form>
+
+        <% if (carrinho && carrinho.length> 0) { %>
+          <% carrinho.forEach(doce=> { %>
+            <div class="item-carrinho">
+              <img src="/images/Doces/<%= doce.imagem %>" alt="<%= doce.nome %>">
+              <div>
+                <h4>
+                  <%= doce.nome %>
+                </h4>
+                <p>
+                  <%= doce.descricao %>
+                </p>
+                <p>R$ <%= (doce.preco * doce.quantidade).toFixed(2) %>
+                </p>
+                <p>Quantidade adicionada: <%= doce.quantidade %> unidades
+                </p>
+
+              </div>
+            </div>
+            <% }) %>
+              <% } else { %>
+                <p>Seu carrinho está vazio.</p>
+                <% } %>
+
+                  <form class="form-carrinho" action="/finalizar" method="post">
+                    <h3>Total: R$<%= total.toFixed(2) %>
+                    </h3>
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail - Você receberá uma mensagem de confirmação de orçamento" required>
+                    <textarea name="observacoes" placeholder="Alergias ou observações"></textarea>
+                    <button type="submit">ENVIAR ORÇAMENTO</button>
+                  </form>
+
+      </section>
+    </div>
+
+    <%- include('partials/footer') %>

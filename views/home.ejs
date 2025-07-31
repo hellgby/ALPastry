@@ -1,0 +1,38 @@
+<%- include('partials/head') %>
+    <%- include('partials/header') %>
+
+    <div  id="page-transition" class="fade-in">
+    <div class="carrossel-container">
+            <button class="btn-anterior">&#10094;</button>
+
+            <main class="produtos-carrossel">
+                <% doces.forEach(doce=> { %>
+                    <div class="produto">
+                        <img src="/images/Doces/<%= doce.imagem %>" alt="<%= doce.nome %>">
+                        <h3>
+                            <%= doce.nome %>
+                        </h3>
+                        <p>
+                            <%= doce.descricao %>
+                        </p>
+                        <span>R$ <%= doce.preco.toFixed(2) %></span>
+                        <form class="form-add-carrinho" data-id="<%= doce.id %>">
+                            <div class="input-quantidade-wrapper">
+                                <button type="button" class="btn-quantidade menos">−</button>
+                                <input type="number" name="quantidade" min="1" value="1" class="input-quantidade">
+                                <button type="button" class="btn-quantidade mais">+</button>
+                            </div>
+
+                            <button onclick="this.classList.add('clicked'); setTimeout(() => this.classList.remove('clicked'), 1000);" class="StyleButton" type="submit">ADICIONAR AO CARRINHO</button>
+                        </form>
+
+
+
+                    </div>
+                    <% }) %>
+            </main>
+
+            <button class="btn-proximo">&#10095;</button>
+        </div>
+        </div>
+        <%- include('partials/footer') %>
