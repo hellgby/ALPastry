@@ -63,4 +63,5 @@ https://github.com/user-attachments/assets/697940dd-afc7-48fc-bf1a-8cab266b818a
 ```bash
 git clone https://github.com/hellgby/ALPastry
 cd ALPastry
-npm start
+npm install
+node app.js
