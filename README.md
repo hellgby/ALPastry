@@ -36,18 +36,14 @@ Nosso site oferece os mais variados doces para alegrar sua boca!
 
 ---
 
-## ✩ Design e estrutura do projeto
-
-### ✧ Estrutura
-
-  
+## ✩ Design
 
 
 ### ✧ Vídeo demonstrativo
 
 
 
-### ✧ Screens
+https://github.com/user-attachments/assets/697940dd-afc7-48fc-bf1a-8cab266b818a
 
 
 
