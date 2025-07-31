@@ -1,5 +1,7 @@
 # AL Pastry - Doces artesanais 🍰   
 
+<img src="public/images/Titulo.png" alt="titulo" width="400" />
+
 ---
 ## ✩ Sobre o projeto
 
