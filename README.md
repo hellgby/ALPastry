@@ -65,5 +65,4 @@ Nosso site oferece os mais variados doces para alegrar sua boca!
 ```bash
 git clone https://github.com/hellgby/ALPastry
 cd ALPastry
-cd looja
 npm start
