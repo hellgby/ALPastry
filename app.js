@@ -139,6 +139,16 @@ app.post('/AddCart', (req, res) => {
     res.status(200).send("Produto adicionado ao carrinho");
   });
 });
+app.post('/esvaziar-carrinho', (req, res) => {
+  // Limpa o carrinho da sessão
+  req.session.carrinho = [];
+
+  // Opcional: também pode zerar o total
+  req.session.total = 0;
+
+  // Redireciona de volta para a página do carrinho
+  res.redirect('/carrinho');
+});
 
 // Servidor
 app.listen(PORT, () => {
