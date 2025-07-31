@@ -22,18 +22,17 @@ body {
 
 
 
-
 header nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #cfe2d4;
+  background-color: #fb5064;
 }
 
 header nav a {
   text-decoration: none;
   margin: 0 10px;
-  color: #444;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -71,12 +70,12 @@ main.produtos {
 }
 
 .StyleButton:hover{
-  background-color: #29a069;
+  background-color: rgb(149, 59, 10);
   cursor: pointer;
 }
 
 .StyleButton {
-      background-color: #85bfa4;
+      background-color: #fecb25;
       color: white;
       padding: 10px 15px;
       border: none;
@@ -96,16 +95,21 @@ main.produtos {
         background-color: #ff69b4;
       }
       100% {
-        background-color: #85bfa4;
+        background-color: #fecb25;
       }
     }
 
 footer {
-  background-color: #cfe2d4;
+  background-color: #fb5064;
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
   margin-top: 40px;
+}
+
+.footer{
+ color: white;
+ font-size: medium;
 }
 
 section.carrinho {
@@ -142,7 +146,7 @@ section.carrinho {
 }
 
 .form-carrinho button {
-  background-color: #444;
+  background-color: rgb(149, 59, 10);
   color: #fff;
   padding: 12px;
   width: 100%;
@@ -182,7 +186,7 @@ section.carrinho {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
-  background-color: #00b472;
+  background-color:  rgb(149, 59, 10);
   color: white;
   border: none;
   margin-left: 40px;
@@ -235,8 +239,8 @@ section.carrinho {
 }
 
 .btn-quantidade {
-  background-color: #ecf8f3;
-  color: #00b472;
+  background-color: #def2cb;
+  color: #638F38;
   border: none;
   border-radius: 6px;
   width: 24px;

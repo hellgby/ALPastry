@@ -81,7 +81,7 @@ Equipe ALPastry
     await transporter.sendMail({
       from: 'ALPastry <ana.candido09@aluno.ifce.edu.br>',
       to: email,
-      subject: 'Orçamento Doce Maison',
+      subject: 'Orçamento ALPastry',
       text: textoEmail,
     });
 
